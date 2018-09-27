@@ -26,7 +26,7 @@ Inside the `convert` function create the local variables listed below.
   * Variable named `dollar` that is initialized to `document.getElementsByName("dollars")[0].value`
   * Variable named `selectElement` that is initialized to `document.getElementById('currency')`
   * Variable named `exchangeRate` that is initialzed to `selectElement.value`
-  * Variable named `index` that is initialized to `selectElement.selectedIndex`
+  * Variable named `index` that is initialized to `selectElement.value`
   * Variable named `currency` that is initialized to `selectElement.options[index].text`
   
 After the above variables have been created, call a function named `updateExchange` and pass (in order) these four arguments: `dollar`, `exchangeRate`, `currency`, and `index` (i.e. the variables created above).
