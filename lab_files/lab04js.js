@@ -1,5 +1,5 @@
 
-var I = []
+var I = [];
 I[0] = "http://munsellb.people.cofc.edu/img/pound.jpeg";
 I[1] = "http://munsellb.people.cofc.edu/img/euro.jpeg";
 I[2] = "http://munsellb.people.cofc.edu/img/kroon.jpeg";
@@ -13,14 +13,16 @@ function convert() {
     var dollar = document.getElementsByName("dollars")[0].value;
     var selectElement = document.getElementById('currency');
     var exchangeRate = selectElement.value;
-    var index = selectElement.value;
-    var currency = selectElement.options[index].text;
+    var index = selectElement.selectedIndex;
+    var currency = selectElement.options[index].txt;
+    
+    updateExchange( dollar, exchangeRate, currency, index );
 
 
 
 }
 
-function updateExchange( dollar, exchangeRate, currency, index );
+updateExchange( dollar, exchangeRate, currency, index );
 
 // -----------------------------------
 // Convert Function Goes Here
